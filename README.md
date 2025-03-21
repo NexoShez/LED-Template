@@ -14,5 +14,7 @@ Check your wiring with 2 or more people before turning your robot on and your se
 
 WPI Documentation is a bit weird but the "Color" variable has a method called "fromHSV", however it converted the H (Hue) into R (Red), S (Saturation), into G (Green), and V (Value) into B (Blue).
 
+## You're welcome :3
+
 Brought to you by FRC Team 2557, The SOTAbots.
 Written by Ephraim C.
