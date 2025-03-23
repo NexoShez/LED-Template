@@ -26,9 +26,9 @@ Right - Progress Mask
 
 Progress Mask gets controlled with the left joystick (y-axis)
 
-# RGB or HSV?
+# How to HSV
 
-WPI Documentation is a bit weird but the "Color" variable has a method called "fromHSV", however it converted the H (Hue) into R (Red), S (Saturation), into G (Green), and V (Value) into B (Blue).
+If you use Googles Color Picker, the Hue is 0-360, however the .fromHSV method puts the hue as 0-180, (saturation and value are both 0-255 but just treat it like percent) so make sure you put in the right values before you start to get angry at WPI
 
 ## You're welcome :3
 
