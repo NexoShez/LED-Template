@@ -4,6 +4,7 @@
 
 package frc.robot;
 
+// import edu.wpi.first.wpilibj.AddressableLED;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
@@ -13,11 +14,12 @@ public class Robot extends TimedRobot {
 
   private final RobotContainer m_robotContainer;
 
-  private final LEDs leds = new LEDs();
+  private final LEDs leds;
   // private final LEDSubsystem simpleLEDS;
 
   public Robot() {
     m_robotContainer = new RobotContainer();
+    leds = m_robotContainer.getLEDs();
 
     // simpleLEDS = new LEDSubsystem();
   }
@@ -62,6 +64,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
+    leds.resetSet();
     // simpleLEDS.runPattern(LEDPattern.solid(Color.kGreen)).withName("Enabled TeleOp");
 
     if (m_autonomousCommand != null) {
@@ -71,7 +74,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopPeriodic() {
-    leds.setTeleOp();
+    leds.setTeleOp(false);
+    leds.setProgressMask();
   }
 
   @Override
