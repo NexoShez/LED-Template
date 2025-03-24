@@ -28,7 +28,7 @@ Progress Mask gets controlled with the left joystick (y-axis)
 
 # How to HSV
 
-If you use Googles Color Picker, the Hue is 0-360, however the .fromHSV method puts the hue as 0-180, (saturation and value are both 0-255 but just treat it like percent) so make sure you put in the right values before you start to get angry at WPI
+If you use Googles Color Picker, the Hue is 0-360, however the .fromHSV method puts the hue as 0-180 (so like if i had a hue of 100 , i would have to divide it by 2 before putting it in), (saturation and value are both 0-255 but just treat it like percent) so make sure you put in the right values before you start to get angry at WPI
 
 ## You're welcome :3
 
